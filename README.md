@@ -2,4 +2,4 @@
 A collection of Airtable formulas that I find useful.
 
 ### Extract URL from Attachment field
-`MID(GIF,FIND("(",GIF)+1,(FIND(")",GIF)-1)-(FIND("(",GIF)))`
+`MID({Attachment Field},FIND("(",{Attachment Field})+1,(FIND(")",{Attachment Field})-1)-(FIND("(",{Attachment Field})))`
