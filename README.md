@@ -5,8 +5,8 @@ A collection of Airtable formulas that I find useful.
 `MID({Attachment Field},FIND("(",{Attachment Field})+1,(FIND(")",{Attachment Field})-1)-(FIND("(",{Attachment Field})))`
 
 ### Simple IF formula
-`IF(
+```IF(
   {Field}=BLANK(),
   "",
   "Otherwise {Field}"
-  )`
+  )```
