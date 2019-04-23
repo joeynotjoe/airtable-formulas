@@ -9,4 +9,4 @@ A collection of Airtable formulas that I find useful.
   {Field}=BLANK(),
   "",
   "Otherwise {Field}"
-  )
+  )`
