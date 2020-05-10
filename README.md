@@ -18,64 +18,63 @@ IF(
 ### Remove some special characters, convert to lowercase, and change spaces to underscores
 ```javascript
 SUBSTITUTE(
-  SUBSTITUTE(
     SUBSTITUTE(
-      SUBSTITUTE(
         SUBSTITUTE(
-          SUBSTITUTE(
             SUBSTITUTE(
-              SUBSTITUTE(
                 SUBSTITUTE(
-                  SUBSTITUTE(
                     SUBSTITUTE(
-                      SUBSTITUTE(
                         SUBSTITUTE(
-                          SUBSTITUTE(
                             SUBSTITUTE(
-                              LOWER(Name),
-                              " ",
-                              "_"
+                                SUBSTITUTE(
+                                    SUBSTITUTE(
+                                        SUBSTITUTE(
+                                            SUBSTITUTE(
+                                                SUBSTITUTE(
+                                                    SUBSTITUTE(
+                                                        SUBSTITUTE(
+                                                            LOWER(Name),
+                                                            " ",
+                                                            "_"
+                                                        ),
+                                                        "'",
+                                                        ""
+                                                    ),
+                                                    "/",
+                                                    "_"
+                                                ),
+                                                "\"",
+                                                ""
+                                            ),
+                                            "”",
+                                            ""
+                                        ),
+                                        ":",
+                                        "_"
+                                    ),
+                                    "“",
+                                    ""
+                                ),
+                                "&",
+                                "and"
                             ),
-                            "'",
+                            ".",
                             ""
-                          ),
-                          "/",
-                          "_"
                         ),
-                        "\"",
-                        ""
-                      ),
-                      "”",
-                      ""
+                        ",",
+                        "_"
                     ),
-                    ":",
-                    "_"
-                  ),
-                  "“",
-                  ""
+                    "’",
+                    ""
                 ),
-                "&",
-                "and"
-              ),
-              ".",
-              ""
+                "*",
+                ""
             ),
-            ",",
-            "_"
-          ),
-          "’",
-          ""
+            "/",
+            ""
         ),
-        "*",
+        "(",
         ""
-      ),
-      "/",
-      ""
     ),
-    "(",
+    ")",
     ""
-  ),
-  ")",
-  ""
-)
-```
+)```
